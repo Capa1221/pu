@@ -1,0 +1,64 @@
+:root {
+  --color-fondo: #012586;
+  --color-boton: #fff;
+  --color-resultado: #fff;
+  --tamano-fuente: 25px;
+  --radio-borde: 25px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('IMAGEN/pexels-lucie-liz-3165335.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculadora {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-fondo);
+  width: 350px;
+  height: 500px;
+  border-radius: var(--radio-borde);
+  box-shadow: black 10px;
+  box-sizing: border-box;
+}
+
+.calculadora td button {
+  display: block;
+  width: 70px;
+  height: 70px;
+  font-size: var(--tamano-fuente);
+  border-radius: var(--radio-borde);
+  background-color: var(--color-boton);
+  cursor: pointer;
+  outline: none;
+}
+
+#resultado {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  background-color: var(--color-resultado);
+  border-radius: var(--radio-borde);
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .calculadora {
+    width: 80%; 
+    height: auto;
+  }
+}
